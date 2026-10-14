@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1c1e21;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Grid Layout */
+main {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+/* Vertical Separator */
+.login-card-hr {
+  border: none;
+  border-left: 1px solid #e5e5e5;
+  height: 80vh;
+  margin-top: 0 40px;
+}
+
+/* Left Side (Branding & Heading) */
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 500px;
+}
+
+.facebook-logo {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 300px;
+}
+
+.left-p {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #000000;
+}
+
+.left-p span {
+  color: #0866ff;
+}
+
+/* Right Side (Form) */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #050505;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 52px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 26px; /* Fully rounded pill inputs */
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0866ff;
+}
+
+input::placeholder {
+  color: #65676b;
+}
+
+/* Buttons */
+.login {
+  width: 100%;
+  height: 48px;
+  background-color: #0866ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px; /* Fully rounded pill button */
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.login:hover {
+  background-color: #0052cc;
+}
+
+/* Forgot Password Link */
+form a {
+  text-align: center;
+  color: #050505;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/* Create Account Button */
+.create-account {
+  width: 100%;
+  height: 48px;
+  background-color: #ffffff;
+  color: #0866ff;
+  border: 1px solid #cccccc;
+  border-radius: 24px; /* Fully rounded pill outline button */
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.create-account:hover {
+  background-color: #f2f2f2;
+}
+
+/* Small Fix for your HTML Class attribute syntax issue */
+/* In your HTML: class="header .login-card " contains a typo (the dot). This rule targets it cleanly: */
+.header {
+  font-size: 1.5rem;
+}
